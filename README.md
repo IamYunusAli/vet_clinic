@@ -18,6 +18,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@IamYunusAli](https://twitter.com/iamyunusali)
 - LinkedIn: [Yunus Ali](https://linkedin.com/in/iamyunusali)
 
+👤 **Author2**
+
+- GitHub: [@niicode](https://github.com/niicode)
+- Twitter: [@_niicode_](https://twitter.com/_niicode_)
+- LinkedIn: [Nii Darku](https://linkedin.com/in/niicode)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
