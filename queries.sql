@@ -114,3 +114,8 @@ SELECT animals.name, vets.name, visits.date_of_visit FROM animals JOIN visits ON
 SELECT COUNT(visits.animals_id) FROM visits JOIN vets ON vets.id = visits.vet_id WHERE vet_id = 2;
 -- What specialty should Maisy Smith consider getting? Look for the species she gets the most.
 SELECT animals.id, animals.name, visits.date_of_visit FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vet_id WHERE visits.date_of_visit = (SELECT MIN(date_of_visit) FROM visits);
+
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+SELECT * FROM visits where vet_id = 2;
+SELECT * FROM owners where email = 'owner_18327@mail.com';
