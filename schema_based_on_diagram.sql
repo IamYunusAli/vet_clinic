@@ -39,10 +39,10 @@ CREATE TABLE medical_treatment(
     medical_history INT references medical_histories(id)
 );
 
-CREATE INDEX ON medical_histories (patient_id);
-CREATE INDEX ON invoices (medical_history_id);
-CREATE INDEX ON invoice_items (invoice_id);
-CREATE INDEX ON invoice_items (treatment_id);
-CREATE Index ON medical_treatment (treatment_id);
-CREATE Index ON medical_treatment (medical_history_id);
+CREATE INDEX ON medical_histories(patient_id);
+CREATE INDEX ON invoices(medical_history_id);
+CREATE INDEX ON invoice_items(invoice_id);
+CREATE INDEX ON invoice_items(treatment_id);
+CREATE Index ON medical_treatment(treatment_id);
+CREATE Index ON medical_treatment(medical_history_id);
 
