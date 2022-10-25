@@ -7,8 +7,8 @@ CREATE TABLE medical_histories(
 
 CREATE TABLE patients(
      id BIGSERIAL PRIMARY KEY,
-     name VARCHAR, 
-     date_of_birth DATE 
+     name VARCHAR,
+     date_of_birth DATE
 );
 
 CREATE TABLE invoices(
@@ -18,3 +18,24 @@ CREATE TABLE invoices(
     payed_at TIMESTAMP,
     medical_history_id INT REFERENCES medical histories(id)
 );
+
+CREATE TABLE treatments(
+    id BIGSERIAL PRIMARY KEY,
+    type VARCHAR(50),
+    name VARCHAR(100)
+);
+
+CREATE TABLE invoice_items(
+    id BIGSERIAL PRIMARY KEY,
+    unit_price DECIMAL,
+    quantity INT,
+    total price DECIMAL,
+    invoice_id INT REFERENCES invoices(id),
+    treatment_id INT,REFERENCES treatments(id)
+);
+
+CREATE TABLE medical_treatment(
+    treatment_id INT references treatments(id),
+    medical_history INT references medical_histories(id)
+);
+
